@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>
+      {{#if title}}
+        {{title}}
+      {{else}}
+      {{/if}}
+    </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="{{#if description}}{{description}}{{else}}{{/if}}" />
+    <meta name="robots" content="noodp" />
+
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{#if ogTitle}}{{ogTitle}}{{else}}{{/if}}" />
+    <meta property="og:description" content="{{#if ogDescription}}{{ogDescription}}{{else}}{{/if}}" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:image" content="{{#if ogImage}}{{ogImage}}{{else}}{{/if}}" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="{{#if ogTitle}}{{ogTitle}}{{else}}{{/if}}" />
+    <meta name="twitter:description" content="{{#if ogDescription}}{{ogDescription}}{{else}}{{/if}}" />
+    <meta name="twitter:site" content="@" />
+    <meta name="twitter:image" content="{{#if ogImage}}{{ogImage}}{{else}}{{/if}}" />
+    <meta name="twitter:creator" content="@" />
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','REPLACE_WITH_TAG_MANAGER_ID');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/ceb5cbc795.js" crossorigin="anonymous"></script>
+
+    <!-- Webfonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i|Josefin+Slab:400,600,700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+
+    {{#> head-block}}{{/head-block}}
+  </head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=REPLACE_WITH_TAG_MANAGER_ID"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  {{#> nav-block}}
+    {{> includes/nav }}
+  {{/nav-block}}
+
+  {{#> main-block}}
+  {{/main-block}}
+
+  {{#> footer-block}}
+    {{> includes/footer }}
+  {{/footer-block}}
+
+  <!-- jQuery and Bootstrap Javascript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-80244035-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'REPLACE_WITH_GOOGLE_ANALYTICS_ID');
+  </script>
+
+  {{#> script-block}}
+  {{/script-block}}
+</body>
+
+</html>
