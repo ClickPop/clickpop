@@ -3,6 +3,7 @@ const handlebars = require('gulp-compile-handlebars');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 const gulpCopy = require('gulp-copy');
+var browserSync = require('browser-sync').create();
 
 sass.compile = require('node-sass');
 
@@ -40,12 +41,24 @@ gulp.task('copyJs', (cb) => {
   cb();
 });
 
+// Reload function for browserSync
+function reload() {
+    browserSync.reload();
+}
+
 // Watch css and handlebars changes.
 gulp.task('watch', () => {
+  browserSync.init({
+    server: {
+      baseDir: "./dist"
+    }
+  });
+
   gulp.watch('./src/sass/**/*.scss', gulp.series('sass'));
   gulp.watch(['./src/pages/*.hbs', './src/partials/**/*.hbs'], gulp.series('html'));
   gulp.watch('./src/img/**/*', gulp.series('copyImg'));
   gulp.watch('./src/js/**/*', gulp.series('copyJs'));
+  gulp.watch('./dist/**/*', reload);
 });
 
 // Build site initially
