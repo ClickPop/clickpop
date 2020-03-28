@@ -1,17 +1,40 @@
-// Colors
-$primary-color:           #335aff;
-$secondary-color:         #666acc;
-
-$font-color:              $secondary-color;
-$heading-color:           $primary-color;
-
-// Radius
-$border-radius:           6px;
-
+// Variables
 // Fonts
-$sans-font:              'Montserrat', helvetica, arial, sans-serif;
-$serif-font:             'Josefin Slab', georgia, serif;
-$font-size:              18px;
+$bodyText:                'Roboto', 'Helvetica', arial, sans-serif;
+$headerText:              'Montserrat', 'Helvetica', arial, sans-serif;
+
+
+// Breakpoints
+$sm:                      576px;
+$md:                      768px;
+$lg:                      992px;
+$xl:                      1200px;
+
+
+// Colors
+$red:                     #E04F4B;
+$blue:                    #2EA0E8;
+$lightestBlue:            #f6f9fd;
+$purple:                  #865AC5;
+
+$backgroundColor:         $lightestBlue;
+
+//// Project Colors
+$distantpals-navy:        #25283b;
+$distantpals-peach:       #ffa384;
+$distantpals-mint:        #82bf97;
+$distantpals-purple:      #9d788e;
+$distantpals-yellow:      #f0c05e;
+$distantpals-blue:        #83a2bf;
+
+$distantpals-primary:     $distantpals-peach;
+$distantpals-secondary:   $distantpals-yellow;
+$distantpals-bg:          $distantpals-navy;
+
 
 // Shadows
-$deep-shadow:            0 4px 40px -13px rgba(72, 66, 67, 0.4);
+$deepShadow:              0 2px 6px 0 rgba(80, 66, 100, 0.2), 0 16px 40px -12px rgba(80, 66, 100, 0.2);
+
+
+// Border
+$border-radius:           6px;

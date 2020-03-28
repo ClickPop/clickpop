@@ -1,0 +1,96 @@
+.featured {
+  position: relative;
+
+  &:before {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 50%;
+  }
+
+  @media screen and (max-width: $lg) {
+    padding-top: 180px;
+
+    &:before {
+      height: 240px;
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  &--flip {
+    &:before {
+      left: 50%;
+
+      @media screen and (max-width: $lg) {
+        left: 0;
+      }
+    }
+  }
+
+  &#shelfhelp {
+    &:before {
+      background-image: url('../img/project/shelfhelp/featured.jpg');
+    }
+  }
+
+  &#wouldyourather {
+    background: #FFE96A;
+
+    &:before {
+      background-image: url('../img/project/wouldyourather/featured.png');
+    }
+  }
+
+  &#buffs {
+    background: #0B1225;
+    color: white;
+
+    &:before {
+      background-image: url('../img/project/buffs/featured.jpg');
+      background-color: #0B1225;
+
+      @media screen and (max-width: $lg) {
+        background-size: contain;
+        height: 220px;
+        margin: 10px 0;
+      }
+    }
+  }
+
+  &#friendlyfaces {
+    background: #d8e0ef;
+
+    &:before {
+      background-image: url('../img/project/friendlyfaces/featured.png');
+      background-size: contain;
+
+      @media screen and (max-width: $lg) {
+        height: 220px;
+        margin: 10px 0;
+      }
+    }
+  }
+
+  &#nicewords {
+    @media screen and (max-width: $lg) {
+      padding-top: 220px;
+    }
+
+    &:before {
+      background-image: url('../img/project/nicewords/featured.png');
+      background-position: center;
+      background-size: auto;
+      margin-top: 20px;
+
+      @media screen and (max-width: $lg) {
+        background-size: 240px auto;
+      }
+    }
+  }
+}

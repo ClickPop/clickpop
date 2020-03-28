@@ -1,19 +1,137 @@
 {{#> layouts/base
-  title=""
-  description=""
-  ogTitle=""
-  ogDescription=""
-  ogImage=""
+  title="ClickPop"
+  description="Radical design for real people."
+  ogTitle="ClickPop"
+  ogDescription="Radical design for real people."
+  ogImage="https://www.clickpopmedia.com/img/og-clickpop.png"
+  twitterTitle="ClickPop"
+  twitterDescription="Radical design for real people."
+  twitterImage="https://www.clickpopmedia.com/img/og-clickpop.png"
 }}
 
 {{#*inline "main-block"}}
-  <div class="container my-5 my-md-5 py-md-5">
-    <div class="row align-items-start">
-      <div class="col">
-        <h1>Main Content</h1>
+  <nav class="navbar fixed-bottom navbar-light bg--white-80 justify-content-center" style="display: none;" id="fixedBar">
+    <a href="/contact.html" class="btn btn-rainbow btn-lg my-2">Let us make you something!</a>
+  </nav>
+
+  <div class="container mb-3">
+    <div class="row align-items-center">
+      <div class="col-xs-12 col-lg-6 col-xl-5">
+        <img src="img/logo.gif" alt="Good One" width="200" class="mt-3" />
+        <h1 class="mb-3">Radical design&nbsp;for real&nbsp;people.</h1>
+        <h4 class="mb-4 subtitle">
+          Clickpop creates interesting and attractive digital design that real live people love to use.
+        </h4>
+        <p class="mb-lg-5 btn--cta">
+          <a href="/contact.html" class="btn btn-rainbow btn-lg" id="topCTA">Let us make you something!</a>
+        </p>
       </div>
+
+      <div class="col-xs-12 col-lg-6 col-xl-7">
+        <img src="img/featured/featured-01.png" alt="" class="img-fluid d-none d-lg-block">
+      </div>
+
     </div>
   </div>
+
+  <div class="container-fluid mb-5 pb-lg-3">
+    <div class="row">
+      <div class="col text-center">
+        <h3>Our projects have been featured by:</h3>
+      </div>
+    </div>
+    <div class="d-flex flex-wrap justify-content-center align-items-center">
+      <span class="py-3 px-4">
+        <a href="https://betalist.com/startups/nice-words" target="_blank"><img src="img/featured-on/betalist.png" alt="Beta List" height="60" /></a>
+      </span>
+      <span class="py-3 px-4">
+        <a href="https://reallygoodemails.com/search/emails/wyr/" target="_blank"><img src="img/featured-on/reallygoodemails.jpg" alt="Beta List" height="60" /></a>
+      </span>
+      <span class="py-3 px-4">
+        <a href="https://blog.prototypr.io/why-we-made-nice-words-431980aaed03" target="_blank"><img src="img/featured-on/prototyper.png" alt="Prototyper.io" height="50" /></a>
+      </span>
+      <span class="py-3 px-4">
+        <a href="https://sidebar.io/users/chris-vasquez" target="_blank"><img src="img/featured-on/sidebar.png" alt="Sidebar.io" height="50" /></a>
+      </span>
+      <span class="py-3 px-4 d-none d-lg-block">
+        <a href="https://newsletry.com/Home/%20Would%20You%20Rather/b4ac7bf3-57b7-4b99-62a7-08d7a0abd47f" target="_blank"><img src="img/featured-on/newsletry.png" alt="Newsletry" height="30" /></a>
+      </span>
+    </div>
+  </div>
+
+  {{> includes/featured-row
+      id="shelfhelp"
+      flip=""
+      logo="logo.png"
+      logoWidth="120"
+      logoAlt="The Shelf Help shelf triangle logo"
+      title="ShelfHelp"
+      description="<p class=\"lead\">We had the opportunity to do branding and a website for an amazing interior designer (who just so happens to be Chris's fiance).</p>"
+      projectLink="https://www.shelfhelp.me"
+      projectLinkSimple="shelfhelp.me"
+      producthunt=""
+      instagram="getshelfhelp"
+  }}
+
+  {{> includes/featured-row
+      id="buffs"
+      flip="true"
+      logo="logo.svg"
+      logoWidth="140"
+      logoAlt="BUFFS"
+      title=""
+      description="<p class=\"lead\">Tools and toys to help Twitch streamers build an audience who loves them.</p>"
+      projectLink="https://www.buffs.app"
+      projectLinkSimple="buffs.app"
+      producthunt=""
+      instagram=""
+  }}
+
+  {{> includes/featured-row
+      id="wouldyourather"
+      flip=""
+      logo="logo.png"
+      logoWidth="280"
+      logoAlt="Would You Rather"
+      title=""
+      description="<p class=\"lead\">A weekly(ish) newsletter full of would you rather scenarios.</p>"
+      projectLink="https://www.wouldyourather.fun"
+      projectLinkSimple="wouldyourather.fun"
+      producthunt="https://www.producthunt.com/posts/would-you-rather-a-newsletter"
+      instagram=""
+  }}
+
+  {{> includes/featured-row
+    id="nicewords"
+    flip="true"
+    logo="logo.png"
+    logoWidth="200"
+    logoAlt="Nice Words"
+    title=""
+    description="<p class=\"lead\">A daily nudge to say something kind.</p>"
+    projectLink="https://www.nicewords.email"
+    projectLinkSimple="nicewords.email"
+    producthunt=""
+    instagram=""
+  }}
+
+  {{> includes/featured-row
+    id="friendlyfaces"
+    flip=""
+    logo="logo.png"
+    logoWidth="180"
+    logoAlt="Friendly Faces"
+    title=""
+    description="<p class=\"lead\">An inclusive avatar generator.</p>
+                 <p class=\"lead\">The goal of Friendly Faces is to create avatars with a personality all their own that are also inclusive enough that anyone can build themselves.</p>"
+    projectLink="https://www.friendlyfaces.co"
+    projectLinkSimple="friendlyfaces.co"
+    producthunt="https://www.producthunt.com/posts/friendly-faces"
+    instagram=""
+  }}
+
+  {{> includes/our-faces }}
+
 {{/inline}}
 
 {{/layouts/base}}

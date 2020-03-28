@@ -1,0 +1,51 @@
+// button
+.btn {
+  &-rainbow {
+    background: linear-gradient(45deg, $blue, $purple);
+    background-size: 300% 200%;
+    background-position: 100% 50%;
+    box-shadow: $deepShadow;
+    border: 0;
+    color: #ffffff;
+
+    &:hover {
+      animation: gradient 4s ease infinite;
+      color: #ffffff;
+    }
+  }
+
+  &--cta {
+    @media screen and (max-width: $lg) {
+      box-sizing: border-box;
+      bottom: 0;
+      left: 0;
+      margin: 0;
+      padding: 20px;
+      position: fixed;
+      width: 100%;
+      z-index: 100;
+
+      .btn {
+        box-shadow: rgba(255,255,255,0.8) 0 0 36px 10px, rgba(255,255,255,0.5) 0 0 12px 4px;
+        display: block;
+      }
+    }
+  }
+
+  // Project Specific Buttons
+  &--distantpals {
+    background: $distantpals-primary;
+    color: $distantpals-navy;
+
+    &:hover {
+      background: darken($distantpals-primary, 10%);
+      color: darken($distantpals-navy, 10%);
+    }
+  }
+}
+
+@keyframes gradient {
+  0% { background-position: 100% 50% }
+  50% { background-position: 0% 50% }
+  100% { background-position: 100% 50% }
+}

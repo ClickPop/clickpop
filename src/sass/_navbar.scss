@@ -1,0 +1,6 @@
+// Navbar
+#fixedBar {
+  @media (max-width: $lg) {
+    display: none !important;
+  }
+}

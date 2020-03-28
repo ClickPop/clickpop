@@ -1,0 +1,50 @@
+.bg {
+  &--white {
+    &-80 {
+      background: rgba(255,255,255,0.5);
+    }
+  }
+
+  // Distant pals
+  &--distantpals-navy {
+    background: $distantpals-navy;
+  }
+  &--distantpals-peach {
+    background: $distantpals-peach;
+  }
+  &--distantpals-purple {
+    background: $distantpals-purple;
+  }
+  &--distantpals-mint {
+    background: $distantpals-mint;
+  }
+  &--distantpals-yellow {
+    background: $distantpals-yellow;
+  }
+  &--distantpals-blue {
+    background: $distantpals-blue;
+  }
+}
+
+.text {
+
+  // Distant pals
+  &--distantpals-navy {
+    color: $distantpals-navy;
+  }
+  &--distantpals-peach {
+    color: $distantpals-peach;
+  }
+  &--distantpals-purple {
+    color: $distantpals-purple;
+  }
+  &--distantpals-mint {
+    color: $distantpals-mint;
+  }
+  &--distantpals-yellow {
+    color: $distantpals-yellow;
+  }
+  &--distantpals-blue {
+    color: $distantpals-blue;
+  }
+}

@@ -1,0 +1,29 @@
+// Carousel
+.carousel {
+  &__container {
+    background: #ffffff;
+    border-radius: 6px;
+    box-shadow: $deepShadow;
+    overflow: hidden;
+  }
+
+  &-control-next {
+    justify-content: flex-end;
+
+    &-icon {
+      background-image: url(../img/next.svg);
+      height: 60px;
+      width: 30px;
+    }
+  }
+
+  &-control-prev {
+    justify-content: flex-start;
+
+    &-icon {
+      background-image: url(../img/prev.svg);
+      height: 60px;
+      width: 30px;
+    }
+  }
+}
